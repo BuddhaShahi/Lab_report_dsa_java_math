@@ -1,7 +1,7 @@
 // 10. Write a program to construct Login form and Signup Form using Swing.
 
 
-package java;
+
 
 
 import javax.swing.*;
@@ -39,44 +39,61 @@ public class Question10 {
         loginFrame.add(loginButton);
         loginFrame.add(signupButton);
 
-        loginFrame.setLocationRelativeTo(null);
+//         loginFrame.setLocationRelativeTo(null);
+//         loginFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//         loginFrame.setVisible(true);
+
+//         // Signup Form
+//         JFrame signupFrame = new JFrame("Signup Form");
+//         signupFrame.setSize(350, 250);
+//         signupFrame.setLayout(new GridLayout(4, 2, 10, 10));
+
+//         JLabel newUserLabel = new JLabel("New Username:");
+//         newUserLabel.setFont(font);
+//         JTextField newUserText = new JTextField();
+//         newUserText.setFont(font);
+
+//         JLabel newPassLabel = new JLabel("New Password:");
+//         newPassLabel.setFont(font);
+//         JPasswordField newPassText = new JPasswordField();
+//         newPassText.setFont(font);
+
+//         JLabel emailLabel = new JLabel("Email:");
+//         emailLabel.setFont(font);
+//         JTextField emailText = new JTextField();
+//         emailText.setFont(font);
+
+//         JButton registerButton = new JButton("Register");
+//         registerButton.setFont(font);
+
+//         signupFrame.add(newUserLabel);
+//         signupFrame.add(newUserText);
+//         signupFrame.add(newPassLabel);
+//         signupFrame.add(newPassText);
+//         signupFrame.add(emailLabel);
+//         signupFrame.add(emailText);
+//         signupFrame.add(new JLabel());  // Empty cell
+//         signupFrame.add(registerButton);
+
+//         signupFrame.setLocationRelativeTo(null);
+//         signupFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//         signupFrame.setVisible(true);
+//     }
+// }
+       
+
+        // Action for Signup Button (opens simple popup)
+        signupButton.addActionListener(e -> {
+            JOptionPane.showMessageDialog(null, "Signup form goes here...");
+        });
+        loginButton.addActionListener(e -> {
+            JOptionPane.showMessageDialog(null, "login form goes here...");
+        });
+
+        // Final frame settings
         loginFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        loginFrame.setLocationRelativeTo(null); // center the frame
         loginFrame.setVisible(true);
-
-        // Signup Form
-        JFrame signupFrame = new JFrame("Signup Form");
-        signupFrame.setSize(350, 250);
-        signupFrame.setLayout(new GridLayout(4, 2, 10, 10));
-
-        JLabel newUserLabel = new JLabel("New Username:");
-        newUserLabel.setFont(font);
-        JTextField newUserText = new JTextField();
-        newUserText.setFont(font);
-
-        JLabel newPassLabel = new JLabel("New Password:");
-        newPassLabel.setFont(font);
-        JPasswordField newPassText = new JPasswordField();
-        newPassText.setFont(font);
-
-        JLabel emailLabel = new JLabel("Email:");
-        emailLabel.setFont(font);
-        JTextField emailText = new JTextField();
-        emailText.setFont(font);
-
-        JButton registerButton = new JButton("Register");
-        registerButton.setFont(font);
-
-        signupFrame.add(newUserLabel);
-        signupFrame.add(newUserText);
-        signupFrame.add(newPassLabel);
-        signupFrame.add(newPassText);
-        signupFrame.add(emailLabel);
-        signupFrame.add(emailText);
-        signupFrame.add(new JLabel());  // Empty cell
-        signupFrame.add(registerButton);
-
-        signupFrame.setLocationRelativeTo(null);
-        signupFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        signupFrame.setVisible(true);
     }
 }
+

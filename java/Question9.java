@@ -2,7 +2,7 @@
 // 9. Write a program to list out all the interfaces.
 
 
-package java;
+
 
 public class Question9 {
     public static void main(String[] args) {
